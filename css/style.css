@@ -11,15 +11,19 @@ body{
 h2{
   color: white;
   text-align: center;
-  padding: 20px 0;
 }
 
 .container{
+  padding-bottom: 40px;
   background-color: #B21951;
 }
 
 
 /* regole inputs + actions */
+.inputs-and-actions h2{
+  padding: 20px;
+}
+
 .inputs-and-actions{
   border-radius: 20px;
   background-color: white;
@@ -73,4 +77,53 @@ h2{
   border-style: solid;
   border: 1px solid grey;
   margin: 0 5px;
+}
+
+
+/* regole parte results */
+.row h2{
+  padding-top: 20px;
+}
+
+.results{
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  padding: 15px;
+}
+
+.results table{
+  border-top: 1px solid gray;
+  border-bottom: 1px solid black;
+  padding: 15px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results table tr>th{
+  text-align: left;
+}
+
+.results table tr:first-child>th:first-child{
+    background-color: gray;
+}
+
+.results table tr>*:first-child,
+.results table tr>*:nth-child(2){
+  width: 25%;
+}
+
+.results table tr:first-child>*{
+  padding: 20px 20px 0;
+}
+
+.results table tr:last-child>*{
+  padding: 50px 20px 0;
+}
+
+#passenger-name{
+  font-weight: 600;
+  padding: 5px 20px 0;
+  vertical-align: top;
+  background-color: gray;
 }
