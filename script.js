@@ -30,7 +30,7 @@ createBtn.addEventListener("click", function(){
     }
 
     console.log(ticketPrice);
-    document.getElementById("ticket-price").innerHTML = parseFloat(ticketPrice.toFixed(2));
+    document.getElementById("ticket-price").innerHTML = parseFloat(ticketPrice.toFixed(2)) + "€";
 
     // istruzioni per generare codice biglietto random
     var codeRnd = Math.floor(Math.random()*10000)+1;
@@ -64,5 +64,10 @@ deleteBtn.addEventListener("click", function(){
   document.getElementById("name").value = "";
   document.getElementById("km").value = "";
   document.getElementById("age").value = "";
+  document.getElementById("passenger-name").innerHTML = "";
+  document.getElementById("offer-type").innerHTML = "";
+  document.getElementById("carrozza").innerHTML = "";
+  document.getElementById("ticket-code").innerHTML = "";
+  document.getElementById("ticket-price").innerHTML = "";
 
 })
