@@ -1,1 +1,76 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container{
+  background-color: #B21951;
+}
+
+
+/* regole inputs + actions */
+.inputs-and-actions{
+  border-radius: 20px;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 2px 0 2px rgba(0,0,0,0.5);
+}
+
+
+/* regole parte input */
+.inputs{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inputs>div{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs>div>*{
+  margin-bottom: 10px;
+}
+
+.inputs>div>label{
+  color: #B21951;
+  text-align: center;
+}
+
+.inputs>div>*:last-child{
+  border: 1px solid #B21951;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+
+/* regole parte actions */
+.actions{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.actions>input{
+  color: #B21951;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border: 1px solid grey;
+  margin: 0 5px;
+}
